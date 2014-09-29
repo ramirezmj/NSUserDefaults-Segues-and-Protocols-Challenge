@@ -14,6 +14,8 @@
 		9ACFD53619DA0E600086856C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACFD53519DA0E600086856C /* Images.xcassets */; };
 		9ACFD53919DA0E600086856C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACFD53719DA0E600086856C /* LaunchScreen.xib */; };
 		9ACFD54519DA0E600086856C /* NSUserDefaults__Segues_and_Protocols_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFD54419DA0E600086856C /* NSUserDefaults__Segues_and_Protocols_ChallengeTests.m */; };
+		9ACFD55019DA0FB90086856C /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFD54F19DA0FB90086856C /* SignInViewController.m */; };
+		9ACFD55319DA0FDF0086856C /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFD55219DA0FDF0086856C /* CreateAccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9ACFD53E19DA0E600086856C /* NSUserDefaults, Segues and Protocols ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSUserDefaults, Segues and Protocols ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACFD54319DA0E600086856C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ACFD54419DA0E600086856C /* NSUserDefaults__Segues_and_Protocols_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaults__Segues_and_Protocols_ChallengeTests.m; sourceTree = "<group>"; };
+		9ACFD54E19DA0FB90086856C /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		9ACFD54F19DA0FB90086856C /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		9ACFD55119DA0FDF0086856C /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		9ACFD55219DA0FDF0086856C /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				9ACFD52F19DA0E600086856C /* ViewController.h */,
 				9ACFD53019DA0E600086856C /* ViewController.m */,
 				9ACFD53219DA0E600086856C /* Main.storyboard */,
+				9ACFD54E19DA0FB90086856C /* SignInViewController.h */,
+				9ACFD54F19DA0FB90086856C /* SignInViewController.m */,
+				9ACFD55119DA0FDF0086856C /* CreateAccountViewController.h */,
+				9ACFD55219DA0FDF0086856C /* CreateAccountViewController.m */,
 				9ACFD53519DA0E600086856C /* Images.xcassets */,
 				9ACFD53719DA0E600086856C /* LaunchScreen.xib */,
 				9ACFD52819DA0E600086856C /* Supporting Files */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACFD55019DA0FB90086856C /* SignInViewController.m in Sources */,
 				9ACFD53119DA0E600086856C /* ViewController.m in Sources */,
+				9ACFD55319DA0FDF0086856C /* CreateAccountViewController.m in Sources */,
 				9ACFD52E19DA0E600086856C /* AppDelegate.m in Sources */,
 				9ACFD52B19DA0E600086856C /* main.m in Sources */,
 			);
