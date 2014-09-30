@@ -13,5 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *passwordLabel;
 
+- (IBAction)logOutButtonPressed:(UIButton *)sender;
+
 @end
 
