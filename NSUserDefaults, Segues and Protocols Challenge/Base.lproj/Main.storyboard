@@ -74,7 +74,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bT7-oT-Bdr">
                                 <rect key="frame" x="16" y="190" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPY-QL-6CH">
                                 <rect key="frame" x="137" y="245" width="38" height="30"/>
@@ -146,7 +146,7 @@
                                     <action selector="cancelButtonPressed:" destination="MH7-ya-cce" eventType="touchUpInside" id="IJ0-Sh-jC4"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2g-45-18J">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Di9-Kj-fde">
                                 <rect key="frame" x="16" y="119" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -156,7 +156,7 @@
                     </view>
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="2XS-lU-GpN" id="9yc-cx-y7s"/>
-                        <outlet property="passwordTextFIeld" destination="e2g-45-18J" id="Cdr-SV-V4y"/>
+                        <outlet property="passwordTextField" destination="Di9-Kj-fde" id="XDD-tC-hyc"/>
                         <outlet property="usernameTextField" destination="0E5-Lk-3C8" id="J3v-3a-d2w"/>
                     </connections>
                 </viewController>

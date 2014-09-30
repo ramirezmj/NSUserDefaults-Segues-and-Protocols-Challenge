@@ -24,6 +24,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ( [segue.destinationViewController isKindOfClass:[CreateAccountViewController class]] ){
+        CreateAccountViewController *createAccountVC = segue.destinationViewController;
+        createAccountVC.delegate = self;
+    }
+}
+
 /*
 #pragma mark - Navigation
 
@@ -34,9 +42,36 @@
 }
 */
 
-- (IBAction)createAccountBarButtonPressed:(UIBarButtonItem *)sender {
+- (IBAction)createAccountBarButtonPressed:(UIBarButtonItem *)sender
+{
+    [self performSegueWithIdentifier:@"toCreateAccountViewControllerSegue" sender:sender];
 }
 
-- (IBAction)loginButtonPressed:(UIButton *)sender {
+- (IBAction)loginButtonPressed:(UIButton *)sender
+{
+    NSString *username = [[NSUserDefaults standardUserDefaults] objectForKey:USER_NAME];
+    NSString *password = [[NSUserDefaults standardUserDefaults] objectForKey:USER_PASSWORD];
+    
+    if ( [self.usernameTextField.text isEqualToString:username] && [self.passwordTextField.text isEqualToString:password] ){
+        [self performSegueWithIdentifier:@"toViewControllerSegue" sender:sender];
+    } else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Username or password combination does't work" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alertView show];
+    }
+        
+
 }
+
+#pragma mark - CreateAccountViewController Delegate
+
+- (void)didCancel
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)didcreateAccount
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
